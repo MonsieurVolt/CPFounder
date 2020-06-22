@@ -18,10 +18,10 @@ function get(postcode) {
     if (this.readyState == XMLHttpRequest.DONE && this.status == 200) {
       var response = JSON.parse(this.responseText);
       complete(response);
-    }
-    if (response.length == 0) {
-      document.querySelector(".main__result").innerHTML =
-        '<p class="inert">Ce code postale ne correspond à aucune ville</p>';
+      if (response.length == 0) {
+        document.querySelector(".main__result").innerHTML =
+          '<p class="inert">Ce code postale ne correspond à aucune ville</p>';
+      }
     }
   };
   request.open(
