@@ -25,19 +25,24 @@
         </h1>
         <form method="post" id="form">
           <label for="saisie">Entrez un code Postale</label>
-          <input type="text" id="saisie" placeholder="Ex: 77000" />
+          <input
+            type="text"
+            id="saisie"
+            placeholder="Ex: 77000"
+            value="77000"
+          />
           <input type="submit" value="Chercher" id="sub-btn" />
         </form>
 
         <div class="main__result">
-          les informations seront affichés ici
+          <p class="inert">les informations seront affichés ici</p>
         </div>
       </div>
     </div>
     <footer class="footer">
       <h2 class="footer__title">A Propos</h2>
       <p class="footer__area" id="foot">
-        Ce site fonctionne grâce à l'API de zipopotamus
+        Ce site fonctionne grâce à l'API geo.api.gouv.fr
       </p>
     </footer>
     <script src="./index.js"></script>

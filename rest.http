@@ -1,2 +1,3 @@
-GET https://geo.api.gouv.fr/communes?codePostal=81000
+GET https://geo.api.gouv.fr/communes?codePostal=77000&format=json
+
 
