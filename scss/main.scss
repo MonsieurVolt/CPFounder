@@ -6,6 +6,7 @@
 }
 
 .main {
+  min-height: 88vh;
   margin-top: 12vh;
   width: 100%;
   background-image: url("./img/alsace.jpg");
@@ -24,6 +25,7 @@
   &__content {
     width: 100%;
     background-color: rgb(245, 223, 151, 0.5);
+    min-height: 88vh;
     height: 100%;
     padding-bottom: 20vh;
     box-sizing: border-box;
