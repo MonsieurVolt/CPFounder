@@ -1,19 +1,3 @@
-/*function send() {
-  let request = new XMLHttpRequest;
-  request.open("POST", "https://mockbin.com/request")
-  request.setRequestHeader("content-type", "application/json")
-  request.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      let response = JSON.parse(this.responseText)
-      document.querySelector("#result").textContent = response.postData.text
-    }
-  }
-  request.send(JSON.stringify(document.querySelector("input").value))
-}
-document.querySelector("#button").addEventListener("click", (e) => {
-  e.preventDefault();
-  send()
-})*/
 const isValid = (value) => {
   let reg = /[0-9]{5}/;
   return (value.length = 5 && reg.test(value));
