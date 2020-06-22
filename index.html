@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
+    <title>Code Postale</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <h1 class="nav__logo"><strong>CP</strong>Founder</h1>
+      <ul class="nav__item">
+        <li><a href="#main" class="nav__item--link">HOME</a></li>
+        <li><a href="#foot" class="nav__item--link">A PROPOS</a></li>
+      </ul>
+    </nav>
+    <div class="main">
+      <div class="main__content">
+        <h1 class="main__explain">
+          Trouvez une ville Française grâce à son code postale
+        </h1>
+        <form method="post" id="form">
+          <label for="saisie">Entrez un code Postale</label>
+          <input
+            type="tel"
+            id="saisie"
+            minlength="5"
+            maxlength="5"
+            pattern="[0-9]{5}"
+            placeholder="Ex: 77000"
+          />
+          <input type="submit" value="Chercher" id="sub-btn" />
+        </form>
+
+        <div class="main__result">
+          les informations seront affichés ici
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <h2 class="footer__title">A Propos</h2>
+      <p class="footer__area" id="foot">
+        Ce site fonctionne grâce à l'API de zipopotamus
+      </p>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
